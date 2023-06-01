@@ -15,7 +15,7 @@ const items = [
     },
     {
         id: 2,
-        html: <ItemsCarousel image={Forno} textH1={'Referência no mercado da industria'} textH2={'Nacional e Internacional'} />,
+        html: <ItemsCarousel image={Forno} textH1={'Referência no mercado da indústria'} textH2={'Nacional e Internacional'} />,
     },
     {
         id: 3,
@@ -58,13 +58,13 @@ export default function CarouselComponent(props) {
         return (
             <CarouselItem className="custom-tag items-center" tag="div" key={item.id} onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} >
                 {item.html}
-                <CarouselCaption className="text-info" />
+                <CarouselCaption captionText={''}/>
             </CarouselItem>
         );
     });
 
     return (
-        <div style={{backgroundColor : 'black'}}>
+        <div style={{ backgroundColor: 'black', height: '100vh' }}>
             <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
                 {slides}

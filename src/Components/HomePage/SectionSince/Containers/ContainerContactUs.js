@@ -1,13 +1,11 @@
 import React from 'react';
 import { Button, Form, Input, div, InputGroupText, InputGroup, Container, Row, Col } from "reactstrap";
 
-// import { Container } from './styles';
-
 function ContainersMap() {
     return <div className="section landing-section" id="contact-us">
         <Container>
             <Row>
-                <Col className="ml-auto mr-auto"  md="12" lg="15" sm="12">
+                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
                     <h2 className="text-center">Fale Conosco</h2>
                     <Form className="contact-form">
                         <Row>

@@ -1,11 +1,9 @@
 
-import { BsInstagram, BsWhatsapp, BsLinkedin, BsFacebook } from 'react-icons/bs';
-import { Row, Container } from "reactstrap";
-import { useEffect, useState } from "react";
+import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import icon from '../../Config/Images/iconMaxi.png'
+import { Row, Container, Col } from "reactstrap";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-import { backtotop } from "../../Config/Icons/backtotop.svg"
-// import { Collapse, NavbarBrand, Navbar, NavItem, NavLink, Nav, } from "reactstrap";
 
 function Footer() {
 	const [classNameButtom, SetClassNameButtom] = useState('btn-outline-dark')
@@ -14,7 +12,6 @@ function Footer() {
 		const handleScroll = () => {
 			const footer = document.getElementById("footer");
 			const buttom = document.getElementById("button");
-			// console.log(window.;);
 			if (footer.getBoundingClientRect().top < buttom.getBoundingClientRect().bottom) {
 				SetClassNameButtom('color-secondary')
 			} else {
@@ -32,67 +29,73 @@ function Footer() {
 	};
 
 	return (<>
-		{/* <button type="button" id="button" className={`btn btn-close `} onClick={ClickInNavLinkOrNavbarBrand} > s </button> */}
 		<a id="button" className={classNameButtom} onClick={ClickInNavLinkOrNavbarBrand}></a>
 		<footer className="main-footer" id="footer">
-			<div className="container">
+			<Container  >
 				<div className="footer-content">
-					<div className="row">
-						<div className="col-lg-4 col-md-6 col-sm-12 ">
-							<div className="logo-widget footer-widget">
+					<Row>
+						<Col sm={12} md={12} lg={3} className='pt-3 pb-0'>
+							<Link onClick={ClickInNavLinkOrNavbarBrand} to='/index' className="text-white footer-title color-secondary">
 								<figure className="logo-box">
 									<a href="#"><img src={icon} alt="" /></a>
 								</figure>
-								<div className="text">
-									<p className="text-white">Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure.</p>
-								</div>
-								<div className="text mt-5">
-									<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
-										<BsInstagram className="icon" />
-									</a>
-									<a href="https://www.facebook.com/maxiforja?mibextid=ZbWKwL" target="_blank" >
-										<BsFacebook className="icon" />
-									</a>
-									<a href="https://www.linkedin.com/company/maxiforja/" target="_blank">
-										<BsLinkedin className="icon" />
-									</a>
-								</div>
+							</Link>
+							<div className="text mt-4">
+								<a href="https://instagram.com/maxiforja?igshid=NTc4MTIwNjQ2YQ==" target="_blank">
+									<BsInstagram className="icons-social-media" />
+								</a>
+								<a href="https://www.linkedin.com/company/maxiforja/" target="_blank">
+									<BsLinkedin className="icons-social-media" />
+								</a>
 							</div>
-						</div>
-						<div className="col-lg-3 col-md-6 col-sm-12 offset-lg-2 ">
-							<div className="">
-								<div className="footer-title">Services</div>
-								<ul className="list p-0 m-0">
-									<li className="pb-3"><a className="text-white color-secondary" href="https://www.contatoseguro.com.br/" target="_blank" > Canal de Denúncia </a> </li>
-									<li className="pb-3"><a className="text-white color-secondary" href="" target="_blank" > Education for all </a> </li>
-									<li className="pb-3"><a className="text-white color-secondary" href="" target="_blank" > Food Serving </a> </li>
-									<li className="pb-3"><a className="text-white color-secondary" href="" target="_blank" > Animal Saves </a> </li>
-									<li className="pb-3"><a className="text-white color-secondary" href="" target="_blank" > Help Orphan </a> </li>
-								</ul>
-							</div>
-						</div>
-						<div className="col-lg-3 col-md-6 col-sm-12 footer-widget">
+
+						</Col>
+						<Col sm={12} md={12} lg={4} className='pt-3 pb-0'>
+							<div className="footer-title bg-danger">Definir Nome</div>
+							<ul className="list p-0 mt-3">
+								<li className="pb-2 text-white color-secondary"> Aviso Legal </li>
+								<li className="pb-2 text-white color-secondary"> Cookies </li>
+								<Link onClick={ClickInNavLinkOrNavbarBrand} to='politica-privacidade'>
+									<li className="pb-2 text-white color-secondary"> Políticas e Privacidade </li>
+								</Link>
+							</ul>
+						</Col>
+						<Col sm={12} md={12} lg={5} className='pt-3 pb-0'>
 							<div className=" footer-widget">
-								<div className="footer-title">Contacts</div>
-								<div className="text">
-									<p className="pb-3 text-white color-secondary" >Lorem Ipsum, simply dummy text, printing, Chandigarh</p>
-									<p className="pb-3 text-white color-secondary" >+55 (051) 2121-8900 </p>
-									<p className="pb-3 text-white color-secondary" >ti.desenvolvimento@maxiforja.com.br</p>
+								<div className="footer-title">
+									<Link onClick={ClickInNavLinkOrNavbarBrand} to='/contato' className="text-white footer-title color-secondary">
+										Contato
+									</Link>
 								</div>
+								<ul className="list p-0 mt-3 ">
+									<li className="pb-2 text-white color-secondary">Av. Antonio Frederico Ozanan, 1.181 - Bairro Brigadeira - Canoas - CEP 92420-360</li>
+									<li className="pb-2 text-white color-secondary">+55 (51) 2121-8900 </li>
+									<li className="pb-2 text-white color-secondary">maxiforja@maxiforja.com.br - Geral</li>
+									<li className="pb-2 text-white color-secondary">comercial.atendimento@maxiforja.com.br - Vendas</li>
+								</ul>
+
 							</div>
-						</div>
-					</div>
+						</Col>
+						{/* <Container className='p-4'>
+							<Row>
+								<Col sm={12} md={12} lg={12} className='column'>
+									<div className="copyright text-white color-secondary">Maxiforja &copy; {new Date().getFullYear()} Todos os direitos reservados</div>
+								</Col>
+							</Row>
+						</Container>
+					*/}
+					</Row>
 				</div>
-			</div>
+			</Container>
 		</footer>
 		<div className="footer-bottom">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-6 col-md-6 col-sm-12 column">
+			<Container className='p-2'>
+				<Row>
+					<Col sm={12} md={12} lg={12} className='column'>
 						<div className="copyright text-white color-secondary">Maxiforja &copy; {new Date().getFullYear()} Todos os direitos reservados</div>
-					</div>
-				</div>
-			</div>
+					</Col>
+				</Row>
+			</Container>
 		</div>
 	</>
 	);
