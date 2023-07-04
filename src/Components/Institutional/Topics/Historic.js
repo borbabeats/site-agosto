@@ -2,16 +2,13 @@ import { useEffect, useState, useCallback } from 'react'
 import { Container, Row, Col, Fade } from "reactstrap"
 import TimeLine from './TimeLine/TimeLine'
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from "react-i18next";
 
 function Historic({ id }) {
-    const isMobile = useMediaQuery({ maxWidth: 767 }); // Tamanho SM
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 }); // Tamanho MD
+    const { t } = useTranslation()
+
     const isDesktop = useMediaQuery({ minWidth: 992 });
     const [index, setIndex] = useState(0)
-
-    const registerFields = useCallback((result) => {
-        // SetSaveMetrics(old => [...old.filter(f => f.id !== result.id), result])
-    }, [])
 
     useEffect(() => {
         if (window.location.hash) {
@@ -28,7 +25,13 @@ function Historic({ id }) {
             <Row>
                 <Fade  >
                     <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
-                        <h2 className="title mt-5 text-white">Histórico</h2>
+                        <h2 className="title mt-5 text-white">{t('institucional.historico.titulo')}</h2>
+                        {t('institucional.historico.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
+                            {titulo && <h2>{titulo}</h2>}
+                            {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
+                            {texto && texto.map((text, index) => <p className="description mt-3 bg-dange text-whit" key={index}> {text} </p>)}
+                        </div>)}
+                    
                     </Col>
                     <Col className="ml-auto mr-auto" md="15" lg="15" sm="15">
                         <TimeLine index={index} onChange={setIndex} />
@@ -40,4 +43,3 @@ function Historic({ id }) {
 }
 
 export default Historic
-

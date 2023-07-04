@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button, Fade, Container, Row, Col } from "reactstrap";
 import { useMediaQuery } from 'react-responsive';
+
 function ProgramsProjects({ id }) {
-    const isMobile = useMediaQuery({ maxWidth: 767 }); // Tamanho SM
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 }); // Tamanho MD
-    const isDesktop = useMediaQuery({ minWidth: 992 });
     return <div className={`bg-white`}  id={id}>
         <Container>
             <Row>

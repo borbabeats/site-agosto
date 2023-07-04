@@ -1,57 +1,109 @@
-import firstPhoto from '../../../../Config/Images/firstPhoto.jpg'
+import firstPhoto from '../../../../Config/Images/Home/firstPhoto.jpg'
 import { Container, Row, Col, Image } from 'react-bootstrap'
-import { useState, useEffect, useContext } from 'react'
-import FormContext from "../../../../Config/Hooks/UseContext"
-import Carousels from "./Carousel/CarouselLines"
 import { useMediaQuery } from 'react-responsive';
+import { useState } from 'react'
 
 const items = [
     {
-        index: 0,
+        year: "1963",
+        img: firstPhoto,
+        text: "Constituição da CIME -Companhia Industrial de Materiais Elétricos, com 5 colaboradores,   em terreno de 4500 m², área construída de 550 m² e a finalidade de produzir eletro ferragem galvanizada para energia elétrica"
+    },
+    {
+        year: "1968",
+        img: firstPhoto,
+        text: "Início da gestão da Família Veit"
+    },
+    {
+        year: "1971",
+        img: firstPhoto,
+        text: "Entra em operação uma prensa fricção de 250 toneladas para produção de forjados destinados ao mercado de implementos agrícolas e rodoviários"
+    },
+    {
+        year: "1973",
+        img: firstPhoto,
+        text: "A empresa se transfere para o atual endereço, em terreno de 26000m² e área construída de 1600m². Inaugurada a Forjaria I, com Martelo Banning de 25kj"
+    },
+    {
+        year: "1975",
+        img: firstPhoto,
+        text: "Entra em operação Martelo Banning de 50 kj. Implantado o primeiro computador NCR"
+    },
+    {
+        year: "1988",
+        img: firstPhoto,
+        text: "Inaugurada a Forjaria II com prensa Smeral de 4.000 t. "
+    },
+    {
+        year: "1991",
+        img: firstPhoto,
+        text: "Iniciada a produção de peças usinadas de precisão com tornos, retíficas e geradora de engrenagens CNC"
+    },
+    {
+        year: "1995",
+        img: firstPhoto,
+        text: "Iniciada a produção de braços de direção para caminhões"
+    },
+    {
+        year: "1998",
+        img: firstPhoto,
+        text: "Implantada a unidade para produção de componentes do sistema de 3º Ponto de Tratores Agrícolas"
+    },
+    {
+        year: "2002",
+        img: firstPhoto,
+        text: "Certificação ISO/TS 16949:1999"
+    },
+    {
+        year: "2003",
+        img: firstPhoto,
+        text: "Iniciada a produção de braços para caminhões para o mercado norte-americano (Detroit Diesel Corporation, na época Aliance Axle Company)"
+    },
+    {
+        year: "2005",
+        img: firstPhoto,
+        text: "Início Fornecimento Scania"
+    },
+    {
+        year: "2008",
+        img: firstPhoto,
+        text: "Iniciada a produção de forjados extrudados a quente. Instalação linha extrusão (GR41) e início da produção de pontas do eixo traseiro"
+    },
+    {
         year: "2010",
         img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
-    },
-    {
-        year: "2011",
-        img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
-    },
-    {
-        year: "2012",
-        img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
+        text: "Implantada linhas de produção em célula na Usinagem"
     },
     {
         year: "2013",
         img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
-    },
-    {
-        year: "2014",
-        img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
+        text: "Implantada a usinagem em célula de manufatura. O atual terreno da empresa tem 75.000 m² e 26.000 m² de área construída"
     },
     {
         year: "2015",
         img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
+        text: "Início Fornecimento Caterpillar e VWCO, Início fornecimento família de Knuckles"
     },
     {
         year: "2016",
         img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure.Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
-    },
-    {
-        year: "2017",
-        img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
+        text: "Implantação de Estação de Tratamento Efluentes: Fisico/Químico e Biológico"
     },
     {
         year: "2018",
         img: firstPhoto,
-        text: "Lorem ipsum dolor amet consectetur adi pisicing elit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam quis.nostrud exercita.laboris nisi ut aliquip ea commodo conse quatuis aute irure."
-    }
+        text: "Certificação IATF 16949:2016 / ISO9001:2015 e Certificação ISO14001:2015"
+    },
+    {
+        year: "2020",
+        img: firstPhoto,
+        text: "Início Fornecimento Mack Trucks"
+    },
+    {
+        year: "2021",
+        img: firstPhoto,
+        text: "Implantação sistema de inspeção por imagem de produtos forjados"
+    },
 ]
 
 export default function Lines() {
@@ -59,12 +111,6 @@ export default function Lines() {
     const isMobile = useMediaQuery({ maxWidth: 767 }); // Tamanho SM
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 }); // Tamanho MD
     const isDesktop = useMediaQuery({ minWidth: 992 }); // Tamanho LG
-
-    // const { registerFields } = useContext(FormContext)
-
-    // useEffect(() => {
-    //     registerFields({ isMobile, isTablet, isDesktop })
-    // }, [isMobile, isTablet, isDesktop])
 
     const handleYearClick = (event) => setActiveYear(event)
 
@@ -101,7 +147,6 @@ export default function Lines() {
                         </Col>
                         <Col lg={6} sm={12} md={12} >
                             <Image src={img} className='d-none d-lg-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 15, position: 'absolute', top: '0%', right: '30% ', width: '60%' }} />
-                            {/* <Image src={img} className='d-lg-none d-sm-block div-animate-img mr-auto ml-auto' style={{ borderRadius: 15, width: '100%' }} /> */}
                         </Col>
                     </Row>
                 </Col>

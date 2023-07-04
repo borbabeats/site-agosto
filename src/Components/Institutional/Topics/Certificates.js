@@ -1,12 +1,13 @@
-import React from 'react';
-import ISO14001 from '../../../Config/Images/ISO14001.png';
-import ISO9001 from '../../../Config/Images/ISO9001.png';
-import iatf from '../../../Config/Images/iatf.png';
+import ISO14001 from '../../../Config/Images/Certificados/ISO14001.png';
+import ISO9001 from '../../../Config/Images/Certificados/ISO9001.png';
 import { Fade, Container, Row, Col } from "reactstrap";
+import iatf from '../../../Config/Images/Certificados/iatf.png';
 import { useMediaQuery } from 'react-responsive';
+import React from 'react';
+import { useTranslation } from "react-i18next";
+
 export default function Certification({ id }) {
-    const isMobile = useMediaQuery({ maxWidth: 767 }); // Tamanho SM
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 }); // Tamanho MD
+    const { t } = useTranslation()
     const isDesktop = useMediaQuery({ minWidth: 992 });
 
     return <div className={`bg-white`} id={id} style={{
@@ -17,10 +18,12 @@ export default function Certification({ id }) {
             <Row>
                 <Fade className="mt-3" baseClassActive={'show'} >
                     <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
-                        <h2 className="title mt-3 color-maxi-invert">Certificações</h2>
-                        <h3 className="description mt-3 bg-danger" >
-                            Segue abaixo as certificações da empresa (Usina ajustar texto)
-                        </h3>
+                        <h2 className="title mt-5">{t('institucional.certificados.titulo')}</h2>
+                        {t('institucional.certificados.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
+                            {titulo && <h2>{titulo}</h2>}
+                            {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
+                            {texto && texto.map((text, index) => <p className="description mt-3 bg-dange text-whit" key={index}> {text} </p>)}
+                        </div>)}
                         <div className='mt-3 d-flex text-center'>
                             <div className="row col ml-auto mr-auto" md="12" lg="15" sm="12">
                                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">

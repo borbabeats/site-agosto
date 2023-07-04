@@ -1,12 +1,13 @@
-import SectionSince from "./SectionSince/SectionSince";
 import CarouselComponent from "./Carousel/Carousel";
-import { Fade } from "reactstrap";
+import ContainerHistory from './Containers/ContainerHistory';
+import ContainersItems from './Containers/ContainerItems';
+import ContainerNews from './Containers/ContainerNews';
 
 export default function HomePage() {
-    return (
-        <Fade >
-            <CarouselComponent />
-            <SectionSince />
-        </Fade>
-    );
+    return <>
+        <CarouselComponent />
+        <ContainerHistory />
+        <ContainersItems />
+        <ContainerNews />
+    </>
 }

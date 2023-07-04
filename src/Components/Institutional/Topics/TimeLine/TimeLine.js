@@ -1,11 +1,10 @@
-import firstPhoto from '../../../../Config/Images/firstPhoto.jpg'
+import firstPhoto from '../../../../Config/Images/Home/firstPhoto.jpg'
 import { useSpring, animated } from '@react-spring/web'
-import { useState, useCallback, useEffect } from "react"
 import { SlControlPlay } from 'react-icons/sl'
-import { Col, Container, Row } from "reactstrap"
-import Lines from "./Lines"
+import { Container, Row } from "reactstrap"
 import { IoMdClose } from "react-icons/io"
-import FormContext from "../../../../Config/Hooks/UseContext"
+import { useState } from "react"
+import Lines from "./Lines"
 
 export default function TimeLine() {
     const [expanded, setExpanded] = useState(false)
@@ -23,15 +22,7 @@ export default function TimeLine() {
 
     const handleCloseClick = r => setExpanded(false)
 
-    const registerFields = (result) => {
-        // SetSaveMetrics(old => [...old.filter(f => f.id !== result.id), result])
-        console.log(result);
-    }
-
     return <Container>
-            {/* <Row className={'text-white'}>
-                <p className={"description mt-3 bg-danger text-white"}>{'Falta um texto de introdução ao nosso histórico!'}</p>
-            </Row> */}
             <Row onClick={handleImageClick} className="img-time text-center items-align d-flex justify-content-center align-items-center mt-5" style={{ position: 'relative',  }}>
                 <img src={firstPhoto} alt="" className='img-shadow ' style={{ width: '60%', height: 'auto', borderRadius: 10 }} />
                 <SlControlPlay style={{ width: '4rem', height: '4rem', maxHeight: '50%', color: '#fff', position: 'absolute' }} />
