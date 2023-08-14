@@ -12,8 +12,8 @@ function ContainersItems() {
             src: [
                 require('../../../Config/Images/ImageAutomotivo/Axle End 2.png'),
                 require('../../../Config/Images/ImageAutomotivo/Steering Knuckle.png'),
-                require('../../../Config/Images/ImageAutomotivo/Tie Rod Arm.png'),
                 require('../../../Config/Images/ImageAutomotivo/Break CamShaft.png'),
+                require('../../../Config/Images/ImageAutomotivo/Tie Rod Arm.png'),
             ],
             title: t('home.produto.automotivo'),
             className: 'img-itens-apresentation'

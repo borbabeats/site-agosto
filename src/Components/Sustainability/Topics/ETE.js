@@ -22,8 +22,10 @@ function ETE({ id }) {
 						</div>)}
 
 						<div className='d-flex text-center'>
-							<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
-							<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+							<Fade>
+								<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+								<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 0, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+							</Fade>
 						</div>
 					</Col>
 				</Fade>

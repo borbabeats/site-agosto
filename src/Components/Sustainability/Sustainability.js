@@ -36,8 +36,6 @@ function Sustainability() {
                 <ETE id={'ete'} />
                 <SocialPerformance id={'atuacao-social'} />
                 <CorporateGovernance id={'governancia-corporativa'} />
-                {/* <ETE id={'ete'} /> */}
-                {/* <Financials id={'financials'} /> */}
             </Col>
         </Row>
     </Container>

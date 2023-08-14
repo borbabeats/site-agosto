@@ -3,6 +3,7 @@ import { Fade, Container, Row, Col } from "reactstrap"
 import spm from "../../../Config/Images/SPM/SPM.png"
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from "react-i18next";
+import Containers from '../../Component/Containers';
 
 
 function OrganizationalPhilosophy({ id }) {
@@ -20,34 +21,19 @@ function OrganizationalPhilosophy({ id }) {
         }
     }, []);
 
-    return <div className={`bg-white`} id={id} style={{
-        padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px')
-        , borderEndStartRadius: 10, paddingBottom: '2rem'
-    }}>
-        <Container>
-            <Row className="" baseClassActive={'show'} >
-                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
-                    <h2 className="title color-maxi-invert ">{t('institucional.filosofia.titulo')}</h2>
-                </Col>
-            </Row>
-            <Row>
-                <Fade className="mt-3" baseClassActive={'show'} >
-                    <Col className="ml-auto mr-auto" md="12" lg="15" sm="12" key={`org-phy-${id}`}>
-                        {t('institucional.filosofia.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, icon }, index) => <div key={index}>
-                            {titulo && <h2>{titulo}</h2>}
-                            {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
-                            {texto && texto.map((text, index) => <p className="description mt-3 " key={index}> {text} </p>)}
-                        </div>)}
-                    </Col>
-                </Fade>
-            </Row>
-            <Row className=" text-center items-align d-flex justify-content-center align-items-center mt-3" >
-                <Fade className=""   >
-                    <img src={spm} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 0 }} />
-                </Fade>
-            </Row>
-        </Container>
-    </div>
+    return <Containers
+        id={id}
+        bground={'bg-white'}
+        h2={'institucional.filosofia.titulo'}
+        texto={'institucional.filosofia.texto'}
+        style={{ padding: (isDesktop ? '0 0 2rem 0' : '0 15px 2rem 15px'), borderEndStartRadius: 10, paddingBottom: '2rem' }}
+    >
+        <Row className=" text-center items-align d-flex justify-content-center align-items-center mt-3" >
+            <Fade className=""   >
+                <img src={spm} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 0 }} />
+            </Fade>
+        </Row>
+    </Containers>
 }
 
 
