@@ -10,7 +10,7 @@ function ContainersItems() {
             id: 1,
             col: 4,
             src: [
-                require('../../../Config/Images/ImageAutomotivo/Axle End 1 - 2.png'),
+                require('../../../Config/Images/ImageAutomotivo/Axle End 2.png'),
                 require('../../../Config/Images/ImageAutomotivo/Steering Knuckle.png'),
                 require('../../../Config/Images/ImageAutomotivo/Tie Rod Arm.png'),
                 require('../../../Config/Images/ImageAutomotivo/Break CamShaft.png'),
@@ -41,11 +41,12 @@ function ContainersItems() {
             className: 'img-itens-apresentation'
         },
     ]
+
     const ItemsApresentationComponent = ({ col, id, src, title, className, link }) => {
         return (<Col md={col} key={id} >
-            <Card className="card-profile card-plain" >
-                <Link to={'/atuacao'} onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ padding: 0, margin: 0, border: 0 }}>
-                    <div className="grid-container" style={{ borderRadius: 10 }}>
+            <Card className="card-profile card-plain " >
+                <Link to={'/produtos'} onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ padding: 0, margin: 0, border: 0 }}>
+                    <div className="grid-container " style={{ borderRadius: 10, backgroundColor : '#757575' }} >
                         {src && src.map((m, index) => <div className="grid-item" key={index}>
                             <img alt="..." src={m} className={className} />
                         </div>)}
@@ -55,8 +56,6 @@ function ContainersItems() {
             </Card>
         </Col>);
     }
-
-
 
     return <div className="section bg-maxi text-center">
         <Container>

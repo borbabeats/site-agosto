@@ -20,7 +20,7 @@ function Financials({ id }) {
 							{texto && texto.map((text, index) => <p className="description mt-3 text-whit" key={index}> {text} </p>)}
 						</div>)}
 						<Row className=" text-center items-align d-flex justify-content-center align-items-center mt-3" >
-							<img src={photo} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 10 }} />
+							{/* <img src={photo} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 10 }} /> */}
 						</Row>
 					</Col>
 				</Fade>

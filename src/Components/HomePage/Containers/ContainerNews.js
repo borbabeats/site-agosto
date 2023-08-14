@@ -17,12 +17,13 @@ const ItemsCardNews = [
         texto: 'fique-por-dentro.tendencia.texto',
     },
     {
-        id: 3, col: '3', img: require('../../../Config/Images/Fotos Maxiatualidades/Mastermover.jpg'),
+        id: 3, col: '3', img: require('../../../Config/Images/Fotos Maxiatualidades/ETE.jpg'),
         titulo: 'fique-por-dentro.ETE.titulo',
         subtitulo: 'fique-por-dentro.ETE.titulo',
         texto: 'fique-por-dentro.ETE.texto',
     },
 ]
+
 
 function ContainerNews() {
     const { t } = useTranslation()

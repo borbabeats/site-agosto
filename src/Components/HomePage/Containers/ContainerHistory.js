@@ -47,7 +47,7 @@ function PageHome() {
             classNameIcon: '',
             textForTitle: '2008',
             textForApresentation: 'home.marco5',
-            img: img2008
+            img: null, sort : 'definir imagem'
 
         }, {
             id: 6,
@@ -70,15 +70,15 @@ function PageHome() {
                             <img src={FotosAereaHome} alt="" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
                         </Fade>
                     </div>
-                    <p className="description pt-3 text-white bg-danger" > {t('home.texto-historia')} </p>
+                    <p className="description pt-3" > {t('home.texto-historia')} </p>
                 </Col>
             </Row>
             <Row className='pt-4' >
-                {Highlights && Highlights.map(({ id, textForTitle, textForApresentation, img }) => {
+                {Highlights && Highlights.map(({ id, textForTitle, textForApresentation, img, sort }) => {
                     return <Col className='p-2' md="2" key={id}>
                         <div className="info">
                             <div className="icon">
-                                <img src={img} alt="" style={{ width: '8rem', height: '8rem', color: 'white', backgroundColor: '-moz-initial', padding : 0, margin : 0 }} />
+                                {img === null ? <small className='bg-danger'>{sort}</small> : <img src={img} alt={img} style={{ width: '8rem', height: '8rem', color: 'white', backgroundColor: '-moz-initial', padding: 0, margin: 0 }} />}
                             </div>
                             <div className="description">
                                 <div className='text-center text-break' style={{ height: 'auto', minHeight: '8rem' }}>

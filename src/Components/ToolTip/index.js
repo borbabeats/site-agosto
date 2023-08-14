@@ -1,10 +1,9 @@
-// import ImgSegAuto from '../../../Config/Images/ImagesTruck/CAMINHÃO.png'
 import { Row, Col } from "reactstrap";
 import { useTranslation } from "react-i18next"
 
 export default function ToolTip({ onMouseEnterDiv, onMouseLeaveDiv, divPosition, infoPiece }) {
     const { t } = useTranslation()
-
+// atuação social & governancia corporatica
     return <div onMouseEnter={onMouseEnterDiv}
         onMouseLeave={onMouseLeaveDiv}
         style={{
@@ -12,8 +11,9 @@ export default function ToolTip({ onMouseEnterDiv, onMouseLeaveDiv, divPosition,
             top: divPosition.top,
             position: 'absolute',
             zIndex: 99,
-            width: 160,
+            width: 250,
             height: 'auto',
+            // backgroundColor: '#001f3d',
             backgroundColor: '#001f3d',
             color: '#001f3d',
             overflow: 'hidden',
@@ -25,6 +25,7 @@ export default function ToolTip({ onMouseEnterDiv, onMouseLeaveDiv, divPosition,
             justifyContent: 'center',
             textAlign: 'center'
         }}>
+            
         <Row>
             {infoPiece.img && infoPiece.img.map(m =>
                 <Col>

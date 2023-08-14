@@ -7,20 +7,20 @@
                     "href": "/institucional"
                 },
                 {
-                    "menu": "Atuação",
-                    "href": "/atuacao"
+                    "menu": "Produtos",
+                    "href": "/produtos"
                 },
                 {
                     "menu": "Tecnologia",
                     "href": "/tecnologia"
                 },
                 {
-                    "menu": "Fique por Dentro",
-                    "href": "/fique-por-dentro"
-                },
-                {
                     "menu": "Sustentabilidade",
                     "href": "/sustentabilidade"
+                },
+                {
+                    "menu": "Fique por Dentro",
+                    "href": "/fique-por-dentro"
                 },
                 {
                     "menu": "Contato",
@@ -35,19 +35,19 @@
             "subtopicos2": "Nacional e Internacional",
             "topicos3": "Excelência e sustentabilidade são chaves para o sucesso",
             "subtopicos3": "Além de trazer ao cliente a solução mais adequada, rápida e eficiente",
-            "historia": "Nossa História!",
-            "texto-historia": "Inicialmente como Companhia Industrial de Materiais Elétricos (CIME), fundada em 1963, na cidade de Canoas, no estado do Rio Grande do Sul, Brasil, a empresa iniciou sua operação com a produção de eletroferragem galvanizada para redes de energia elétrica e apenas três colaboradores. Ainda como CIME, em 1966, entrou no mercado de peças forjadas, produzindo acessórios para isoladores de vidro. As produções para atender os mercados de implementos agrícolas e rodoviários iniciaram em 1971, quando entrou em operação uma prensa de fricção de 250 toneladas para produção de forjados, destinados a esses setores. Com a expansão, passou a se denominar Maxiforja Forjaria e Metalurgia, em 1973, quando também ocorreu a transferência para a sede atual, hoje ocupando 32 mil metros quadrados de área construída. A década seguinte, 1980, foi marcada pelo início de operações com prensas rápidas. Para acompanhar essa evolução, inaugurou-se a Forjaria II, com prensas Smeral de até 4.000 tonf., a maior prensa do Estado do Rio Grande do Sul, iniciando a produção de peças usinadas para os mercados automotivo e agrícola. Na década de 90, a empresa passou a produzir braços para direção de caminhões e ônibus e componentes do sistema de terceiro ponto de tratores agrícolas. Em 2008, alterou seu nome para Maxiforja Componentes Automotivos, sendo sua principal atividade o desenvolvimento e a fabricação de componentes e sistemas forjados e usinados para os mercados agrícola, automotivo e industrial. Nossa história, ao longo de seis décadas, focada na inovação e na excelência da entrega, é feita por pessoas, que se reinventam e se transformam no presente, sempre atentos ao futuro. ",
+            "historia": "Nossa História",
+            "texto-historia": "Fundada em 1963, na cidade de Canoas/RS, a empresa iniciou sua operação com a produção de eletroferragem galvanizada para redes de energia elétrica. Em 1966, entrou no mercado de peças forjadas, produzindo acessórios para isoladores de vidro. As produções para atender os mercados de implementos agrícolas e rodoviários iniciaram em 1971. Em 1973, passou a se denominar Maxiforja, quando também ocorreu a transferência para a sede atual, hoje ocupando 32 mil metros quadrados de área construída. A década de 80 foi marcada pelo início de operações com prensas rápidas, iniciando a produção de peças usinadas para os mercados automotivo e agrícola. Na década de 90, a empresa passou a produzir braços para direção de caminhões e ônibus, para o mercado nacional e internacional. Atualmente, a empresa tem como sua principal atividade o desenvolvimento e a fabricação de componentes e sistemas forjados e usinados para os mercados agrícola, automotivo e industrial. Nossa história, ao longo de seis décadas, focada na inovação e na excelência da entrega, é feita por pessoas, que se reinventam e se transformam no presente, sempre atentos ao futuro.",
             "marco1": "Início das atividades, produção de eletroferragens galvanizadas para o segmento de energia",
             "marco2": "Iniciada a produção de peças para o segmento Agrícola",
-            "marco3": "Inaugurada a Forjaria II com prensa Smeral de 4.000 t.",
-            "marco4": "Iniciada a produção de peças para o segmento Automotivo.",
-            "marco5": "Implementada nova linha de extrução a quente, focado na produção de pontas do eixo traseiro.",
+            "marco3": "Inaugurada a linha de forjamento com a prensa Smeral de 4.000 toneladas",
+            "marco4": "Iniciada a produção de braços de direção para caminhões",
+            "marco5": "Implementada nova linha de extrusão a quente, focado na produção de pontas do eixo traseiro.",
             "marco6": "Início da produção em célula na Usinagem",
             "produto": {
                 "produto": "Produtos",
                 "automotivo": "Automotivo",
                 "agricola": "Agrícola",
-                "MEC": "MEC"
+                "MEC": "Máquinas e Equipamentos de Construção"
             }
         },
         "institucional": {
@@ -74,7 +74,7 @@
                         "texto": [
                             "Desenvolver e fornecer soluções sustentáveis em forjados, usinados e conjuntos montados gerando valor para clientes, colaboradores e acionistas."
                         ],
-                        "icon" : "missao"
+                        "icon": "missao"
                     },
                     {
                         "titulo": "",
@@ -82,7 +82,7 @@
                         "texto": [
                             "Ser uma empresa reconhecida pelos seus clientes por sua capacidade competitiva e vocação inovadora no desenvolvimento de tecnologias para forjados, usinados e conjuntos montados."
                         ],
-                        "icon" : "visao"
+                        "icon": "visao"
                     },
                     {
                         "titulo": "",
@@ -93,7 +93,7 @@
                             "3. Certo a partir de mim;",
                             "4. Excelência na manufatura."
                         ],
-                        "icon" : "valores"
+                        "icon": "valores"
                     },
                     {
                         "titulo": "",
@@ -101,7 +101,7 @@
                         "texto": [
                             "Soluções em forjados, usinados e conjuntos montados"
                         ],
-                        "icon" : "negocio"
+                        "icon": "negocio"
                     }
                 ]
             },
@@ -137,7 +137,7 @@
                 "texto": [
                     {
                         "titulo": "Política do Sistema de Gestão da Qualidade e Ambiental",
-                        "subtitulo": "A Maxiforja Componentes Automotivos Ltda. fornece soluções em componentes e sistemas para os segmentos automotivo, agrícola e industrial utilizando metodologia de gestão para:",
+                        "subtitulo": "A Maxiforja Componentes Automotivos Ltda fornece soluções em componentes e sistemas para os segmentos automotivo, agrícola e industrial utilizando metodologia de gestão para:",
                         "texto": [
                             "Atender às expectativas dos clientes com criação, inovação e tecnologia;",
                             "Incentivar o trabalho participativo buscando desenvolver relações duradouras com nossos colaboradores, fornecedores e clientes;",
@@ -177,7 +177,7 @@
                     "titulo": "Arquivo",
                     "codigo-etica": "Código de Ética",
                     "guia-ambiental": "Guia de Gestão Ambiental",
-                    "guia-visitante": "Guia de Visitanets e Prestadores Serviços",
+                    "guia-visitante": "Guia de Visitantes e Prestadores Serviços",
                     "ver": "Ver Arquivo"
                 }
             }
@@ -268,15 +268,226 @@
             }
         },
         "tecnologia": {
-            "automotivo": {
-                "menu": "Automotivo",
-                "titulo": "Segmento Automotivo",
+            "forjaria": {
+                "menu": "Forjaria",
+                "titulo": "Forjaria",
                 "texto": [
                     {
-                        "titulo": "",
+                        "titulo": "Forjaria",
+                        "subtitulo": "",
+                        "texto": [
+                            "8 Linhas de forjamento, sendo 3 robotizadas;",
+                            "8 Linhas de forjamento, sendo 3 robotizadas;",
+                            "Linha automatizada de extrusão a quente;",
+                            "Peças de 1 a 70 kg;",
+                            "Resfriamento controlado e têmpera direta."
+                        ],
+                        "itens": [
+                            {
+                                "titulo": "",
+                                "textos": [
+                                    ""
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "tratamento-termico": {
+                "menu": "Tratamento Térmico",
+                "titulo": "Tratamento Térmico",
+                "texto": [
+                    {
+                        "titulo": "Tratamento Térmico",
+                        "subtitulo": "",
+                        "texto": [
+                            "Capacidade: até 15.000 toneladas/ano;"
+                        ],
+                        "itens": [
+                            {
+                                "titulo": "Mais de 10 fornos para tratamento térmico:",
+                                "textos": [
+                                    "Têmpera com atmosfera controlada;",
+                                    "Revenimento;",
+                                    "Normalização;",
+                                    "Cementação;",
+                                    "Recozimento pleno."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "usinagem-1": {
+                "menu": "Usinagem 1",
+                "titulo": "Usinagem 1",
+                "texto": [
+                    {
+                        "titulo": "Usinagem 1",
                         "subtitulo": "",
                         "texto": [
                             ""
+                        ],
+                        "itens": [
+                            {
+                                "titulo": "Aproximadamente 100 máquinas de usinagem:",
+                                "textos": [
+                                    "Centros de Usinagem;",
+                                    "Tornos Multitarefas;",
+                                    "Tornos CNC;",
+                                    "Têmperas por indução;",
+                                    "Retificas CNC;",
+                                    "Geradoras Multiperfil;",
+                                    "Brochadeiras;",
+                                    "Linhas Robotizadas."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "usinagem-2": {
+                "menu": "Usinagem 2",
+                "titulo": "Usinagem 2",
+                "texto": [
+                    {
+                        "titulo": "Usinagem 2",
+                        "subtitulo": "",
+                        "texto": [
+                            "Célula de Solda Robotizada;",
+                            "Linha de pré-tratamento com 8 estágios;",
+                            "Pintura Líquida de Primer e Acabamento;",
+                            "Montagem de conjuntos."
+                        ],
+                        "itens": []
+                    }
+                ]
+            },
+            "expedicao": {
+                "menu": "Expedição",
+                "titulo": "Expedição",
+                "texto": [
+                    {
+                        "titulo": "Expedição",
+                        "subtitulo": "",
+                        "texto": [
+                            "Estrutura com layout inteligente;",
+                            "Modernas posições com fluxo de movimentação;",
+                            "Facilidade na operação e no fluxo logístico."
+                        ],
+                        "itens": []
+                    }
+                ]
+            },
+            "ferramentaria": {
+                "menu": "Ferramentaria",
+                "titulo": "Ferramentaria",
+                "texto": [
+                    {
+                        "titulo": "Ferramentaria",
+                        "subtitulo": "",
+                        "texto": [
+                            "Inspeção Digital;",
+                            "High Speed Machines e máquinas de usinagem de 5 eixos;",
+                            "Desenvolvimento Compacto e Integrado",
+                            "Qform",
+                            "Siemens NX (CAD/CAM)",
+                            "Siemens Teamcenter (PLM)",
+                            "FEMAP (Siemens)",
+                            "Plant Simulation"
+                        ],
+                        "itens": []
+                    }
+                ]
+            },
+            "laboratorio-mecanico": {
+                "menu": "Laboratório de Testes e Ensaios Mecânicos",
+                "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                "texto": [
+                    {
+                        "titulo": "Laboratório de Testes e Ensaios Mecânicos",
+                        "subtitulo": "",
+                        "texto": [
+                            "Validação de produtos;",
+                            "Ensaios de tração e compressão; impacto, fadiga linear, flexão rotativa e torcional, drop test e impactoCharpy e Izod;",
+                            "Requisitos de acordo com a ABNT NBR ISO/IEC 17025."
+                        ],
+                        "itens": []
+                    }
+                ]
+            },
+            "laboratorio-metalurgico": {
+                "menu": "Laboratório Metalúrgico",
+                "titulo": "Laboratório Metalúrgico",
+                "texto": [
+                    {
+                        "titulo": "Laboratório Metalúrgico",
+                        "subtitulo": "",
+                        "texto": [
+                            "Equipado com moderna linha de durômetros e microscópios;",
+                            "Ensaios de dureza e Microdureza; ",
+                            "Análises Metalográficas e  Espectrometria – Óptica."
+                        ],
+                        "itens": []
+                    }
+                ]
+            },
+            "metrologia": {
+                "menu": "Metrologia",
+                "titulo": "Metrologia",
+                "texto": [
+                    {
+                        "titulo": "Metrologia",
+                        "subtitulo": "“Se você não pode medir algo, não pode melhorá-lo.” (Lord Kelvin)",
+                        "texto": [
+                            "Com isto a Maxiforja entende que medir é sinônimo de conhecer e, por meio de medições integradas com base de dados para avaliação dimensional de todos os itens fabricados,  formar uma cultura de constante inovação e aprendizado.",
+                            "Nosso laboratório de Metrologia está preparado e equipado com tecnologias de última geração para fornecimento de produtos conforme a necessidade que nossos clientes necessitam."
+                        ],
+                        "itens": [
+                            {
+                                "titulo": "Tridimensionais:",
+                                "textos": [
+                                    "Zeiss Prismo Navigator",
+                                    "Zeiss Contura G2",
+                                    "Zeiss Duramax "
+                                ]
+                            },
+                            {
+                                "titulo": "Rugosímetros:",
+                                "textos": [
+                                    "Taylor Robson"
+                                ]
+                            },
+                            {
+                                "titulo": "Equipamentos de Perfil:",
+                                "textos": [
+                                    "Jenoptik Hommel",
+                                    "Perfilometro Mahr",
+                                    "Scanner Zeiss Comet 3D",
+                                    "Braço de Medição Homer"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "laboratorio-quimico": {
+                "menu": "Laboratório Químico",
+                "titulo": "Laboratório Químico",
+                "texto": [
+                    {
+                        "titulo": "Laboratório Químico",
+                        "subtitulo": "",
+                        "texto": [
+                            "O Laboratório Químico foi inaugurado em uma nova área, em fevereiro de 2020, ao lado da linha de Pintura Líquida, devido à importância deste setor nos controles de processo e na garantia dos padrões de qualidade do pré-tratamento (à base de fosfato de zinco tricatiônico), e da pintura líquida da Maxiforja.",
+                            "As principais competências do Laboratório Químico são:",
+                            "- Realizar análises de cloro, ferro, dureza, pH e condutividade durante a produção de água DI pelo processo de Osmose Reversa;",
+                            "- Executar análises de alcalinidade, alcalinidade total, pH, condutividade, acidez total, acidez livre, sólidos sedimentáveis, massa de fosfato depositada, teor de zinco em amostras do pré-tratamento;",
+                            "- Realizar termografias das estufas de cura e de secagem de peças;",
+                            "- Efetuar ensaios de aderência, espessura, dureza e brilho em componentes pintados;",
+                            "- Medir a viscosidade de tintas - método copo Ford nº4;",
+                            "- Emitir relatórios de pintura;",
+                            "- Medir luminosidade das cabines de pintura e pontos de inspeção de peças na linha de pintura; "
                         ]
                     }
                 ]
@@ -286,7 +497,7 @@
             "63anos": {
                 "titulo": "2023: Vem aí os 60 anos da Maxiforja",
                 "subtitulo": "EMPRESA RELEMBRA SUA HISTÓRIA E JÁ PREPARA AÇÕES COMEMORATIVAS À DATA.",
-                "texto" : "A Maxiforja já iniciou a contagem regressiva rumo às comemorações dos seus 60 anos de história, em julho de 2023. Os preparativos para a data reúnem uma série de ações, que incluem o resgate da história da empresa, homenagens e agradecimentos a colaboradores, parceiros e clientes.",
+                "texto": "A Maxiforja já iniciou a contagem regressiva rumo às comemorações dos seus 60 anos de história, em julho de 2023. Os preparativos para a data reúnem uma série de ações, que incluem o resgate da história da empresa, homenagens e agradecimentos a colaboradores, parceiros e clientes.",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -309,7 +520,7 @@
             "tendencia": {
                 "titulo": "Tendências e inovações sempre no radar da Maxiforja",
                 "subtitulo": "EMPRESA PARTICIPA DE EVENTOS NACIONAIS E INTERNACIONAIS PARA ACOMPANHAR DE PERTO OS MOVIMENTOS DO MERCADO",
-                "texto" : "Uma das principais características da Maxiforja, em quase seis décadas de história, é acompanhar de perto as movimentações do mercado nacional e internacional, em especial as tendências e inovações dos setores automotivos e do agronegócio...",
+                "texto": "Uma das principais características da Maxiforja, em quase seis décadas de história, é acompanhar de perto as movimentações do mercado nacional e internacional, em especial as tendências e inovações dos setores automotivos e do agronegócio...",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -332,7 +543,7 @@
             "ETE": {
                 "titulo": "Estação de Tratamento de Efluentes (ETE)",
                 "subtitulo": "COMPROMISSO COM O MEIO AMBIENTE",
-                "texto" : "Seguindo os mais altos padrões e com certificação internacional, cuidamos e protegemos o meio ambiente através de uma estação interna de tratamento de efluentes.",
+                "texto": "Seguindo os mais altos padrões e com certificação internacional, cuidamos e protegemos o meio ambiente através de uma estação interna de tratamento de efluentes.",
                 "paragraph": [
                     {
                         "titulo": "Seguindo os mais altos padrões e com certificação internacional, cuidamos e protegemos o meio ambiente através de uma estação interna de tratamento de efluentes.",
@@ -340,7 +551,7 @@
                     },
                     {
                         "titulo": "",
-                        "texto": "De acordo com dados oficiais do governo Federal, as indústrias são responsáveis por 22% do consumo de água no país. Por fazer parte desta parcela tão importante, a Maxiforja se preocupa e busca contribuir com o meio ambiente através do tratamento dos efluentes produzidos na empresa. Internamente, criamos estações para tratar de forma primária e secundária os efluentes industriais e biológicos. Toda a água utilizada em nossa indústria passa pelo processo, que segue as mais rigorosas diretrizes. O tratamento de efluentes considera duas fases: na primeira, existe uma etapa físico-química onde através de uma reação química, a parte sólida e a parte líquida do efluente se destacam para que depois sejam removidas em um processo de separação. Já na segunda fase, que é a fase biológica, uma série de microorganismos e bactérias se encarregam de consumir a matéria orgânica poluente através de um processo respiratório. Com mais de 800 colaboradores e uma produção contínua de produtos, nossa própria ETE (Estação de Tratamento de Efluentes) foi inaugurada em 2016 e é um grande diferencial de mercado. Essa e outras ações nos trouxeram a certificação ISO 14.001, que especifica os requisitos de um Sistema de Gestão Ambiental e comprova nosso compromisso em proteger o meio ambiente."
+                        "texto": "De acordo com dados oficiais do governo Federal, as indústrias são responsáveis por 22% do consumo de água no país. Por fazer parte desta parcela tão importante, a Maxiforja se preocupa e busca contribuir com o meio ambiente através do tratamento dos efluentes produzidos na empresa. Internamente, criamos estações para tratar de forma primária e secundária os efluentes industriais e biológicos. Toda a água utilizada em nossa indústria passa pelo processo, que segue as mais rigorosas diretrizes. O tratamento de efluentes considera duas fases: na primeira, existe uma etapa físico-química onde através de uma reação química, a parte sólida e a parte líquida do efluente se destacam para que depois sejam removidas em um processo de separação. Já na segunda fase, que é a fase biológica, uma série de microrganismos e bactérias se encarregam de consumir a matéria orgânica poluente através de um processo respiratório. Com mais de 800 colaboradores e uma produção contínua de produtos, nossa própria ETE (Estação de Tratamento de Efluentes) foi inaugurada em 2016 e é um grande diferencial de mercado. Essa e outras ações nos trouxeram a certificação ISO 14.001, que especifica os requisitos de um Sistema de Gestão Ambiental e comprova nosso compromisso em proteger o meio ambiente."
                     },
                     {
                         "titulo": "",
@@ -359,7 +570,7 @@
             "exportacao": {
                 "titulo": "PRÊMIO EXPORTAÇÃO RS 2022",
                 "subtitulo": "EXCELÊNCIA EXPORTADORA RECONHECIDA PELO PRÊMIO EXPORTAÇÃO RS - DESTAQUE SETORIAL NO SEGMENTO METALÚRGICO",
-                "texto" : "Pelo sétimo ano consecutivo, a Maxiforja conquista o Prêmio Exportação RS. Este é o maior reconhecimento do Sul do país ao segmento exportador...",
+                "texto": "Pelo sétimo ano consecutivo, a Maxiforja conquista o Prêmio Exportação RS. Este é o maior reconhecimento do Sul do país ao segmento exportador...",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -378,7 +589,7 @@
             "supplier": {
                 "titulo": "PRÊMIO SUPPLIER AWARD 2022",
                 "subtitulo": "",
-                "texto" : "Em novembro, a Maxiforja conquistou o Prêmio Supplier Award, da Meritor, nas categorias Qualidade, Logística, Competitividade e Desenvolvimento dentro do prazo...",
+                "texto": "Em novembro, a Maxiforja conquistou o Prêmio Supplier Award, da Meritor, nas categorias Qualidade, Logística, Competitividade e Desenvolvimento dentro do prazo...",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -393,7 +604,7 @@
             "100marcas": {
                 "titulo": "100 Marcas do RS",
                 "subtitulo": "UM ÍCONE DA IDENTIDADE EMPRESARIAL GAÚCHA - DESTAQUE NO LIVRO 100 MARCAS DO RS",
-                "texto" : "Pensando nos diversos pontos essenciais de segurança no trabalho aliados ao setor de logística, a Maxiforja começou a trabalhar com um novo modal de movimentação...",
+                "texto": "Pensando nos diversos pontos essenciais de segurança no trabalho aliados ao setor de logística, a Maxiforja começou a trabalhar com um novo modal de movimentação...",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -404,7 +615,7 @@
             "mastermover": {
                 "titulo": "Mastermover: mais segurança e melhorias na logística",
                 "subtitulo": "O NOVO MODAL DE MOVIMENTAÇÃO LOGÍSTICA DA MAXIFORJA FACILITA O ABASTECIMENTO DE OPERAÇÕES E GARANTE MAIS SEGURANÇA AOS COLABORADORES.",
-                "texto" : "Em 2022, a Maxiforja ficou entre as marcas gaúchas destaque na 2ª edição do Livro 100 Marcas do RS, do Grupo Amanhã. A publicação ressalta a história de marcas consagradas como ícones da identidade e da cultura empresarial gaúcha...",
+                "texto": "Em 2022, a Maxiforja ficou entre as marcas gaúchas destaque na 2ª edição do Livro 100 Marcas do RS, do Grupo Amanhã. A publicação ressalta a história de marcas consagradas como ícones da identidade e da cultura empresarial gaúcha...",
                 "paragraph": [
                     {
                         "titulo": "",
@@ -431,57 +642,96 @@
         },
         "sustentabilidade": {
             "ete": {
-                "menu": "ETE",
-                "titulo": "Central de Tratamentos de Efluentes",
-                "subtitulo": "Segmento Automotivo",
+                "menu": "Meio Ambiente",
+                "titulo": "Meio Ambiente",
+                "subtitulo": "Central de Tratamentos de Efluentes",
                 "texto": [
                     {
                         "titulo": "",
                         "subtitulo": "",
                         "texto": [
-                            ""
+                            "escrever um texto relacionado a importancia que damos ao meio ambiente"
+                        ]
+                    },
+                    {
+                        "titulo": "",
+                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "texto": [
+                            "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
+                            "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "
                         ]
                     }
                 ]
             },
-            "financials": {
-                "menu": "Financeira",
-                "titulo": "Financeira",
-                "subtitulo": "Segmento Automotivo",
+            "atuacao-social": {
+                "menu": "Atuação Social",
+                "titulo": "Atuação Social",
+                "subtitulo": "Central de Tratamentos de Efluentes",
                 "texto": [
                     {
                         "titulo": "",
                         "subtitulo": "",
                         "texto": [
-                            ""
+                            "escrever um texto relacionado a importancia que damos ao meio ambiente"
+                        ]
+                    },
+                    {
+                        "titulo": "",
+                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "texto": [
+                            "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
+                            "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "
+                        ]
+                    }
+                ]
+            },
+            "governancia-corporativa": {
+                "menu": "Governança corporativa",
+                "titulo": "Governança corporativa",
+                "subtitulo": "Central de Tratamentos de Efluentes",
+                "texto": [
+                    {
+                        "titulo": "",
+                        "subtitulo": "",
+                        "texto": [
+                            "escrever um texto relacionado a importancia que damos ao meio ambiente"
+                        ]
+                    },
+                    {
+                        "titulo": "",
+                        "subtitulo": "Central de Tratamentos de Efluentes",
+                        "texto": [
+                            "Na Maxiforja a gestão ambiental está inserida na estratégia de desenvolvimento da organização, possuímos duas estações de tratamento de efluentes para tratamento e prevenção da poluição, com infraestrutura moderna, imponente e com uma equipe capacitada para garantia da eficácia dos tratamentos e respeito ao meio ambiente. ",
+                            "As estações são divididas em tratamento físico-químico, voltada a efluentes do processo produtivo e estação de tratamento biológico, destinada aos efluentes sanitários e à complementação do tratamento físico-químico. "
                         ]
                     }
                 ]
             }
+            
         },
         "contato": {
             "endereco": "Endereço",
-            "fale-conosco" : "Fale Conosco",
-            "telefone" : "Telefone",
-            "canal-denuncia" :"Canal de Denúncia",
+            "fale-conosco": "Fale Conosco",
+            "telefone": "Telefone",
+            "canal-denuncia": "Canal de Denúncia",
             "clique": "Clique Aqui!",
-            "map" : "http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Av.+Antonio+Frederico+Ozanan,+1181&amp;sll=-14.239424,-53.186502&amp;sspn=50.603317,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Ant%C3%B4nio+Frederico+Ozanan,+1181+-+Bairro+do+Parque,+Canoas+-+Rio+Grande+do+Sul,+92420-360&amp;ll=-29.8779744,-51.1695529,15&amp;spn=0.011164,0.031285&amp;z=15&amp;iwloc=A&amp;output=embed"
+            "map": "http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=&amp;q=Av.+Antonio+Frederico+Ozanan,+1181&amp;sll=-14.239424,-53.186502&amp;sspn=50.603317,93.076172&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Ant%C3%B4nio+Frederico+Ozanan,+1181+-+Bairro+do+Parque,+Canoas+-+Rio+Grande+do+Sul,+92420-360&amp;ll=-29.8779744,-51.1695529,15&amp;spn=0.011164,0.031285&amp;z=15&amp;iwloc=A&amp;output=embed"
         },
         "rodape": {
-            "aviso" : "Aviso Legal",
-            "lang" : "pt",
-            "cookies" : {
-                "href" : "https://www.iubenda.com/privacy-policy/70338458/cookie-policy",
-                "titulo" : "Política de Cookies"
+            "aviso": "Aviso Legal",
+            "lang": "pt",
+            "cookies": {
+                "href": "https://www.iubenda.com/privacy-policy/70338458/cookie-policy",
+                "titulo": "Política de Cookies"
             },
-            "privacidade" : {
-                "href" : "https://www.iubenda.com/privacy-policy/70338458",
-                "titulo" : "Política de Privacidade"
+            "privacidade": {
+                "href": "https://www.iubenda.com/privacy-policy/70338458",
+                "titulo": "Política de Privacidade"
             }
         },
         "geral": {
             "saiba-mais": "Saiba Mais",
-            "fechar" : "Fechar"
+            "fechar": "Fechar"
         }
     }
 }

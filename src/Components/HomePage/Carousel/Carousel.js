@@ -69,7 +69,7 @@ export default function CarouselComponent(props) {
                 <div className="page-header">
                     <div className="motto filter text-center" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
                         <img src={item.src} style={{ objectFit: 'cover', objectPosition: 'center', height: '100vh', width: '100vw' }} alt="" />
-                        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+                        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex : 999, color : '#fff' }}>
                             <h1>{t(item.altText)}</h1>
                             <h4>{t(item.caption)}</h4>
                         </div>

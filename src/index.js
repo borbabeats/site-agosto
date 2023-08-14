@@ -6,7 +6,7 @@ import TopNavbar from "./Components/Navbars/TopNavbar";
 import HomePage from "./Components/HomePage/HomePage";
 import Contact from "./Components/Contact/Contact";
 import StayIn from "./Components/StayIn/StayIn";
-import Acting from "./Components/Acting/Acting";
+import Acting from "./Components/Acting/Products";
 import Footer from "./Components/Footer/Footer";
 import ReactDOM from "react-dom/client";
 import "./Config/i18n";
@@ -19,10 +19,10 @@ root.render(<BrowserRouter>
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/institucional" element={<Institucional />} />
-        <Route path="/atuacao" element={<Acting />} />
+        <Route path="/produtos" element={<Acting />} />
         <Route path="/tecnologia" element={<Technology />} />
-        <Route path="/fique-por-dentro" element={<StayIn />} />
         <Route path="/sustentabilidade" element={<Sustainability />} />
+        <Route path="/fique-por-dentro" element={<StayIn />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

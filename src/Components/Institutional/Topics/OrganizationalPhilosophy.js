@@ -25,23 +25,18 @@ function OrganizationalPhilosophy({ id }) {
         , borderEndStartRadius: 10, paddingBottom: '2rem'
     }}>
         <Container>
-            <Row>
-                <Fade className="mt-3" baseClassActive={'show'} >
-                    <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
-                        <h2 className="title color-maxi-invert ">{t('institucional.filosofia.titulo')}</h2>
-                    </Col>
-                </Fade>
+            <Row className="" baseClassActive={'show'} >
+                <Col className="ml-auto mr-auto" md="12" lg="15" sm="12">
+                    <h2 className="title color-maxi-invert ">{t('institucional.filosofia.titulo')}</h2>
+                </Col>
             </Row>
             <Row>
                 <Fade className="mt-3" baseClassActive={'show'} >
                     <Col className="ml-auto mr-auto" md="12" lg="15" sm="12" key={`org-phy-${id}`}>
                         {t('institucional.filosofia.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto, icon }, index) => <div key={index}>
                             {titulo && <h2>{titulo}</h2>}
-                            {subtitulo && <Row style={{textAlign : 'center'}}>
-                                <img style={{height : '5%', width : '5%'}} src={require(`../../../Config/Icons/${icon}.svg`)} alt="" />
-                                <h3 className='color-maxi'> {subtitulo} </h3>
-                            </Row>}
-                            {texto && texto.map((text, index) => <p className="description mt-3 bg-dange text-whit" key={index}> {text} </p>)}
+                            {subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
+                            {texto && texto.map((text, index) => <p className="description mt-3 " key={index}> {text} </p>)}
                         </div>)}
                     </Col>
                 </Fade>

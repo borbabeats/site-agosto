@@ -1,4 +1,4 @@
-import photo from '../../../Config/Images/Fotos Maxiatualidades/ETE.png'
+import photo from '../../../Config/Images/Fotos Maxiatualidades/ETE.jpg'
 import { Col, Container, Fade, Row } from 'reactstrap';
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from 'react-responsive';
@@ -9,10 +9,6 @@ function ETE({ id }) {
 	const { t } = useTranslation()
 	const isDesktop = useMediaQuery({ minWidth: 992 });
 
-
-	// return <div className='vh-100' id={id}>
-	//   <img  src={photo} />
-	// </div>;
 	return <div style={{ padding: (isDesktop ? '5rem 0 2rem 0' : '5rem 15px 2rem 15px') }} className={`bg-white`} id={id}>
 		<Container>
 			<Row className='mt-3'>
@@ -22,11 +18,13 @@ function ETE({ id }) {
 						{t('sustentabilidade.ete.texto', { returnObjects: true }).map(({ titulo, subtitulo, texto }, index) => <div key={index}>
 							{titulo && <h2 className='title' >{titulo}</h2>}
 							{subtitulo && <h3 className='color-maxi'> {subtitulo} </h3>}
-							{texto && texto.map((text, index) => <p className="description mt-3 text-whit" key={index}> {text} </p>)}
+							{texto && texto.map((text, index) => <p className="description mt-3 text-white bg-danger" key={index}> {text} </p>)}
 						</div>)}
-						<Row className=" text-center items-align d-flex justify-content-center align-items-center mt-3" >
-								<img src={photo} alt="spm" style={{ width: '100%', height: 'auto', borderRadius: 10 }} />
-						</Row>
+
+						<div className='d-flex text-center'>
+							<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+							<img src={photo} alt="" style={{ height: '100%', width: '50%', borderRadius: 20, opacity: '0.9', background: 'rbga(0,0,0,0.8)', padding: 10 }} />
+						</div>
 					</Col>
 				</Fade>
 			</Row>

@@ -90,8 +90,8 @@ function Footer() {
 								<ul className="list p-0 mt-3 ">
 									<li className="pb-2 text-white color-secondary">Av. Antonio Frederico Ozanan, 1.181 - Bairro Brigadeira - Canoas - CEP 92420-360</li>
 									<li className="pb-2 text-white color-secondary">+55 (51) 2121-8900 </li>
-									<li className="pb-2 text-white color-secondary">maxiforja@maxiforja.com.br - Geral</li>
-									<li className="pb-2 text-white color-secondary">comercial.atendimento@maxiforja.com.br - Vendas</li>
+									<li className="pb-2 text-white color-secondary">maxiforja@maxiforja.com.br</li>
+									<li className="pb-2 text-white color-secondary">comercial.atendimento@maxiforja.com.br</li>
 								</ul>
 
 							</div>

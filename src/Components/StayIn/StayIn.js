@@ -18,7 +18,7 @@ const ItemsCardNews = [
         paragraph: 'fique-por-dentro.tendencia.paragraph'
     },
     {
-        id: 3, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/ETE.png'),
+        id: 3, col: '3', img: require('../../Config/Images/Fotos Maxiatualidades/ETE.jpg'),
         titulo: 'fique-por-dentro.ETE.titulo',
         subtitulo: 'fique-por-dentro.ETE.titulo',
         texto: 'fique-por-dentro.ETE.texto',
@@ -72,7 +72,7 @@ function StayIn() {
                 {img && <img alt={titulo} src={img} style={{ maxHeight: '15rem', width: 'auto', objectFit: 'cover', objectPosition: 'center', }} />}
                 <CardBody>
                     <CardTitle tag="h3" className='mb-2' > {t(titulo)} </CardTitle>
-                    <CardSubtitle className="mb-2 text-muted " tag="h6" > {t(subtitulo)} </CardSubtitle>
+                    {/* <CardSubtitle className="mb-2 text-muted " tag="h6" > {t(subtitulo)} </CardSubtitle> */}
                     <CardText className='' tag='h5'> {t(texto)} </CardText>
                     <div style={{ position: 'absolute', bottom: 20, left: 20 }}>
                         <Button className='btn-maxi-color'  onClick={toggle}> {t('geral.saiba-mais')} </Button>
@@ -82,7 +82,7 @@ function StayIn() {
             <Modal isOpen={modal} toggle={toggle} fullscreen={'xl'} size={'xl'} >
                 <div style={{ display: 'block', alignItems: 'center', alignContent: 'center', textAlign: 'center', justifyContent: 'center', marginTop: '2rem', marginBottom: '2rem', borderBottom: '1px solid #dddddd' }}>
                     <h2 className="title color-maxi mt-3">{t(titulo)}</h2>
-                    <h3 className='m-3'>{t(subtitulo)}</h3>
+                    {/* <h3 className='m-3'>{t(subtitulo)}</h3> */}
                 </div>
                 <ModalBody>
                     <div style={{ display: 'block', alignItems: 'center', alignContent: 'center', textAlign: 'center', justifyContent: 'center', marginBottom: '2rem' }}>

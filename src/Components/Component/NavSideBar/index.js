@@ -73,11 +73,11 @@ function NavSideBar({ ItemsNavLink }) {
             offset={-70}
             duration={500}
             activeClass='selected'
-            className={`text-white `}
+            className={`text-white`}
             active={activeSection === href}
-            style={{ height: '16%', width: '100%' }}
+            style={{ height: `${100 / ItemsNavLink.length}%`, width: '100%' }}
         >
-            <p className='text-change-size'>{t(menu)}</p>
+            <p className='text-change-size =' style={{width : 'auto'}}>{t(menu)}</p>
         </Nav.Link>)
         }
     </Nav>;

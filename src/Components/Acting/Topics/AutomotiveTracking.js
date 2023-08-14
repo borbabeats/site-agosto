@@ -1,4 +1,3 @@
-import Viewer3D from '../../Viewer3D/index'
 import { useState, useRef, useEffect } from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { useTranslation } from "react-i18next"
@@ -18,8 +17,9 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [200, 535, 211, 531, 221, 527, 233, 517, 225, 509, 213, 515, 204, 510, 211, 501, 192, 481, 182, 490, 164, 481, 155, 491, 166, 494, 176, 498, 172, 509, 182, 515, 179, 522],
-                img: [require('../../../Config/Images/ImageAutomotivo/Knuckle - Tie Rod Arm - Break CamShaft_1.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Knuckle - Tie Rod Arm - Break CamShaft_2.png')]
             }, {
+                
                 name: "2 - Alavanca de Levante da Cabine",
                 shape: 'poly',
                 fillColor: fillColor,
@@ -74,7 +74,7 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [438, 402, 404, 417, 383, 405, 378, 384, 370, 376, 356, 373, 367, 360, 382, 374, 394, 365, 421, 381, 408, 391, 416, 399, 425, 393],
-                img: [require('../../../Config/Images/ImagesTruck/Imagem 13_1.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Knuckle - Tie Rod Arm - Break CamShaft_2.png')]
             }, {
                 name: "10 - Sela de Mola Dianteira",
                 shape: 'poly',
@@ -88,7 +88,7 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [489, 417, 491, 391, 467, 380, 467, 400],
-                img: [require('../../../Config/Images/ImagesTruck/Flange.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Flange.png')]
             }, {
                 name: "12 - Conjunto Braço Intermediário",
                 shape: 'poly',
@@ -97,19 +97,19 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
                 coords: [496, 508, 487, 517, 488, 531, 496, 493, 505, 482, 512, 465, 479, 472, 453, 488, 462, 496, 453, 500, 460, 506, 469, 503, 478, 528],
                 img: [require('../../../Config/Images/ImageAutomotivo/Steering Support 2.png')]
             }, {
-                name: "13 - Manga de Eixo, Braço de Direção e Eixo 'S'",
+                name: "13 - Manga de Eixo, Braço de Direção, Braço de Ligação e Eixo 'S'",
                 shape: 'poly',
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [569, 495, 595, 509, 595, 515, 585, 522, 599, 532, 612, 531, 619, 523, 631, 527, 638, 521, 628, 512, 626, 497, 616, 491, 604, 488, 595, 487, 580, 472, 573, 467, 565, 469, 573, 478, 583, 495, 569, 485],
-                img: [require('../../../Config/Images/ImagesTruck/Imagem 9_1.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Knuckle - Steering Arm - Tie Rod Arm - Break CamShaft_2.png')]
             }, {
                 name: "14 - Flange Yoke",
                 shape: 'poly',
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [718, 318, 721, 332, 711, 338, 700, 328, 698, 316, 699, 308, 708, 306],
-                img: [require('../../../Config/Images/ImagesTruck/Flange.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Flange.png')]
             }, {
                 name: "15 - Suporte do Amortecedor",
                 shape: 'poly',
@@ -284,7 +284,7 @@ function AutomotiveTracking({ id, ImgSegAuto }) {
                 fillColor: fillColor,
                 strokeColor: strokeColor,
                 coords: [365, 598, 373, 606, 366, 614, 373, 619, 386, 627, 392, 634, 382, 645, 397, 653, 410, 653, 415, 646, 426, 648, 431, 646, 436, 642, 428, 627, 424, 612, 403, 601, 392, 606, 381, 587, 366, 580, 361, 587],
-                img: [require('../../../Config/Images/ImagesTruck/Imagem 13_2.png')]
+                img: [require('../../../Config/Images/ImageAutomotivo/Knuckle - Steering Arm - Tie Rod Arm - Break CamShaft_2.png')]
             },
         ],
     }

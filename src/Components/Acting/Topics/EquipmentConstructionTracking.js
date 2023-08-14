@@ -1,11 +1,10 @@
-import escavadeira from '../../../Config/Images/ImagesConstruction/escavadeira.png'
-import patrola from '../../../Config/Images/ImagesConstruction/patrola.png'
 import { useState, useRef, useEffect } from 'react';
 import { Container, Row, Col, Fade } from "reactstrap";
 import { useTranslation } from "react-i18next"
 import ImageMapper from "react-img-mapper";
 import { useMediaQuery } from 'react-responsive';
 import ToolTip from '../../ToolTip';
+
 const fillColor = 'rgba(0, 31, 61,0.5)'
 const strokeColor = 'rgba(0,0,0,0.1)'
 
@@ -29,22 +28,22 @@ export default function EquipmentConstructionTracking({ id, retro }) {
                 coords: [961, 586, 19],
                 img: [require('../../../Config/Images/ImagesConstruction/Cap.png')]
             },
-            {
-                name: "3 - Capa",
-                shape: 'circle',
-                fillColor: fillColor,
-                strokeColor: strokeColor,
-                coords: [780, 471, 12],
-                img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
-            },
-            {
-                name: "4 - Capa",
-                shape: 'circle',
-                fillColor: fillColor,
-                strokeColor: strokeColor,
-                coords: [627, 531, 11],
-                img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
-            },
+            // {
+            //     name: "3 - Capa",
+            //     shape: 'circle',
+            //     fillColor: fillColor,
+            //     strokeColor: strokeColor,
+            //     coords: [780, 471, 12],
+            //     img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
+            // },
+            // {
+            //     name: "4 - Capa",
+            //     shape: 'circle',
+            //     fillColor: fillColor,
+            //     strokeColor: strokeColor,
+            //     coords: [627, 531, 11],
+            //     img: [require('../../../Config/Images/ImagesConstruction/Cap 1.png')]
+            // },
             {
                 name: "5 - Garfo do Yoke e Capa do Yoke",
                 shape: 'circle',
@@ -63,7 +62,7 @@ export default function EquipmentConstructionTracking({ id, retro }) {
             },
         ],
     }
-    
+
     const [divPosition, setDivPosition] = useState({ left: 0, top: 0 })
     const isDesktop = useMediaQuery({ minWidth: 992 })
     const [isVisible, setIsVisible] = useState(false)
@@ -121,116 +120,3 @@ export default function EquipmentConstructionTracking({ id, retro }) {
         </Container>}
     </div>
 }
-
-// const mapSegMEC = {
-//     name: 'image-map-escavadeira',
-//     areas: [
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [410, 328, 8],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [460, 359, 10],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [515, 390, 11],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [326, 501, 8],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [268, 469, 8],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [214, 439, 11],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Guia",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [159, 408, 10],
-//             img: [require('../../../Config/Images/ImagesConstruction/Guide.png')]
-//         },
-//         {
-//             name: "Munhão de Rolamento",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [223, 367, 15],
-//             img: [require('../../../Config/Images/ImagesConstruction/BearingTrunnion.png')]
-//         },
-//         {
-//             name: "Munhão de Rolamento",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [332, 305, 10],
-//             img: [require('../../../Config/Images/ImagesConstruction/BearingTrunnion.png')]
-//         },
-//         {
-//             name: "Munhão de Rolamento",
-//             shape: 'circle',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [223, 248, 10],
-//             img: [require('../../../Config/Images/ImagesConstruction/BearingTrunnion.png')]
-//         },
-//     ],
-// }
-
-// const mapPatrol = {
-//     name: 'image-map-patrola',
-//     areas: [
-//         {
-//             name: "atuacao.automotivo.pecas.braco-ligacao",
-//             shape: 'poly',
-//             fillColor: fillColor,
-//             strokeColor: strokeColor,
-//             coords: [505, 489, 509, 499, 502, 506, 492, 501, 490, 491, 511, 474, 517, 474, 519, 487, 507, 487],
-//             img: [require('../../../Config/Images/ImagesConstruction/LockHook.png')]
-//         },
-//     ],
-// }
-
-{/* <Col className="" md="15" lg="15" sm="15" >
-                <div className='' style={{ position: 'relative' }}>
-                    {isVisible && <ToolTip onMouseEnterDiv={onMouseEnterDiv} onMouseLeaveDiv={onMouseLeaveDiv} divPosition={divPosition} infoPiece={infoPiece} />}
-                    {imageWidth && <ImageMapper src={escavadeira} map={mapSegMEC} width={imageWidth} imgWidth={909} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />}
-                </div>
-            </Col>
-            <Col className="" md="15" lg="15" sm="15" >
-                <div className='' style={{ position: 'relative' }}>
-                    {isVisible && <ToolTip onMouseEnterDiv={onMouseEnterDiv} onMouseLeaveDiv={onMouseLeaveDiv} divPosition={divPosition} infoPiece={infoPiece} />}
-                    {imageWidth && <ImageMapper src={patrola} map={mapPatrol} width={imageWidth} imgWidth={931} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />}
-                </div>
-            </Col> */}
